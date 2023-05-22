@@ -1,0 +1,30 @@
+<script>
+// API URL
+var url = "https://v2.namsor.com/NamSorAPIv2/api2/json/genderFull/"+{{jsc - nameinput}};
+ 
+var options = {
+  headers: {
+    'accept': 'application/json',
+    'X-API-KEY': '5b078ac5765b2d20efdf2e5afeca914b', 
+ 
+  }
+};
+ 
+fetch(url, options)
+  .then(function(response) {
+ 
+    return response.text();
+  })
+  .then(function(data){
+ 
+    var data_obj = JSON.parse(data);
+    var likelyGender = data_obj['likelyGender'];
+ 
+  var datalayer = window.dataLayer = window.dataLayer || [];  
+  dataLayer.push({
+    'event':'gender',
+    'likelyGender':likelyGender,
+  });
+ 
+  })
+</script>
