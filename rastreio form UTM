@@ -1,0 +1,21 @@
+<script>
+    function RastreioUTM() {
+        const utms = ['utm_campaign', 'utm_medium', 'utm_source', 'utm_content', 'utm_term']
+
+        const urlParamsCapt = new URLSearchParams(window.location.search)
+
+        utms.forEach(utm => {
+            if (utm == "utm_source") {
+                document.getElementById(utm).value = urlParamsCapt.get(utm) ? urlParamsCapt.get(utm) : (document.referrer ? new URL(document.referrer).hostname : "direto")
+            } else {
+                document.getElementById(utm).value = urlParamsCapt.get(utm)
+            }
+        })
+    }
+
+    RastreioUTM()
+    window.onload = RastreioUTM()
+    document.getElementById("email").onchange = function () {
+        RastreioUTM()
+    }
+</script>
