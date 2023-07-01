@@ -1,0 +1,25 @@
+
+<script>
+    
+document.getElementById("phone").onchange = function() {myFunctionUTM()};
+
+function myFunctionUTM() {
+    const queryStringCapt = window.location.search;
+    
+    const urlParamsCapt = new URLSearchParams(queryStringCapt);
+    const utm_campaign_capt = urlParamsCapt.get("utm_campaign");
+    const utm_medium_capt = urlParamsCapt.get("utm_medium");
+    const utm_source_capt = urlParamsCapt.get("utm_source");
+    const utm_content_capt = urlParamsCapt.get("utm_content");
+    const utm_term_capt = urlParamsCapt.get("utm_term");
+
+    document.getElementById("utm_campaign").value=utm_campaign_capt;
+    document.getElementById("utm_medium").value=utm_medium_capt;
+    document.getElementById("utm_source").value=utm_source_capt;
+    document.getElementById("utm_content").value=utm_content_capt;
+    document.getElementById("utm_term").value=utm_term_capt;
+    
+}
+
+
+</script>
