@@ -1,0 +1,71 @@
+ <div class='box-outer'>
+    <div class='main_box'>
+      <div class='bar top'></div>
+      <div class='bar bottom delay'></div>
+      <form method="POST" action="https://SEUACTIVE.activehosted.com/proc.php" id="_form_1_" class="_form _form_1 _inline-form  _dark">
+        <input type="hidden" id="u" name="u" value="1" />
+        <input type="hidden" id="f" name="f" value="1" />
+        <input type="hidden" id="s" name="s" />
+        <input type="hidden" id="c" name="c" value="0" />
+        <input type="hidden" id="m" name="m" value="0" />
+        <input type="hidden" id="act" name="act" value="sub" />
+        <input type="hidden" id="v" name="v" value="2" />
+        <input type="hidden" name="or" value="e168ac95776f1349df635e1078cbd277" />
+        <input type="hidden" name="field[35]" id="utm_source" value="">
+        <input type="hidden" name="field[36]" id="utm_medium" value="">
+        <input type="hidden" name="field[37]" id="utm_campaign" value="">
+        <input type="hidden" name="field[38]" id="utm_content" value="">
+        <input type="hidden" name="field[38]" id="utm_term" value="">
+        <div class="_form-content">
+          <div class="_form_element _x13321119 _full_width _clear">
+            <div class="_form-title" id="ctr"></div>
+          </div>
+          <div class="_form_element _x64904928 _full_width _clear">
+            <div class="_html-code">
+              <p class="p-title"></p>
+            </div>
+          </div>
+          <div class="_form_element _x04141362 _full_width field" id="name_hd">
+            <label for="fullname" class="_form-label"></label>
+            <div class="_field-wrapper">
+              <input type="text" onfocus="showResting()" id="fullname" name="fullname" placeholder="Digite seu nome" required />
+            </div>
+          </div>
+          <div class="_form_element _x40620063 _full_width  field" id="email_hd">
+            <label for="email" class="_form-label"></label>
+            <div class="_field-wrapper">
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required/>
+            </div>
+          </div>
+          <div class="_form_element _x77594598 _full_width field">
+            <label for="phone" class="_form-label"></label>
+            <div class="_field-wrapper">
+              <input type="text" id="phone" name="phone" placeholder="Digite seu WhatsApp" required />
+            </div>
+          </div>
+          <div class="_clear-element"></div>
+        </div>
+        <div class="_form-thank-you" style="display:none;"></div>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+  <button class="stamp-header" style="background-color: #F08000; color: white; margin-bottom: 10px; border-radius: 20px; padding: 15px 30px; font-size: 20px; font-weight: bold; text-transform: uppercase;">&#10145; Garantir minha vaga!</button>
+</div>
+ <div class="_button-wrapper _full_width" id="button_hd">
+            <p style="color:rgba(255,255,255,.5);font-size:8px;text-align:center;line-height:1em;margin:10px 0 0 0;">
+              Ao me inscrever autorizo este site enviar comunicações por e-mail ou qualquer outro meio e concordo com a sua política de privacidade, de acordo com a lei 12.965/2014 e 13.709/2018.
+            </p>
+          </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    function showResting() {
+      let eml = document.getElementById("email_hd");
+      let btg = document.getElementById("button_hd");
+      if (eml !== null && eml !== undefined) {
+        eml.style.display = "block";
+      }
+      if (btg !== null && btg !== undefined) {
+        btg.style.display = "block";
+      }
+    }
+  </script>
