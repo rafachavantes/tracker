@@ -1,0 +1,21 @@
+<script>
+var xhr = new XMLHttpRequest();
+var url = "COLOQUE AQUI SEU WEBHOOK";
+ 
+xhr.open("POST", url, true);
+xhr.setRequestHeader("Content-Type", "application/json");
+ 
+var el = { "email": {{jsc - input - email}},    // variáveis a serem enviadas
+           "nome": {{jsc - input - nome}},
+           "cidade": {{cookie - ment_ct}},
+           "estado": {{cookie - ment_st}},
+           "pais": {{cookie - ment_cn}},
+           "utm_source": {{URL - utm_source}},
+           "utm_medium": {{URL- utm_medium}},
+           "utm_campaign": {{URL - utm_campaign}},
+           "utm_term": {{URL - utm_term}},
+           "utm_content": {{URL - utm_content}}
+  }
+var data = JSON.stringify(el);
+xhr.send(data);
+</script>
