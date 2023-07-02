@@ -47,8 +47,30 @@
         </div>
         <div class="_form-thank-you" style="display:none;"></div>
   <div style="display: flex; justify-content: center; margin-top: 20px;">
-  <button class="stamp-header" style="background-color: #F08000; color: white; margin-bottom: 10px; border-radius: 20px; padding: 15px 30px; font-size: 20px; font-weight: bold; text-transform: uppercase;">&#10145; Garantir minha vaga!</button>
+  <button class="stamp-header">&#10145; Garantir minha vaga!</button>
 </div>
+
+<style>
+  /* Estilos padrão */
+  .stamp-header {
+    background-color: #F08000;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  /* Estilos para dispositivos móveis (até 600 pixels de largura) */
+  @media (max-width: 600px) {
+    .stamp-header {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+</style>
  <div class="_button-wrapper _full_width" id="button_hd">
             <p style="color:rgba(255,255,255,.5);font-size:8px;text-align:center;line-height:1em;margin:10px 0 0 0;">
               Ao me inscrever autorizo este site enviar comunicações por e-mail ou qualquer outro meio e concordo com a sua política de privacidade, de acordo com a lei 12.965/2014 e 13.709/2018.
