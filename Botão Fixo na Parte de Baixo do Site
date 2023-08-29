@@ -1,0 +1,70 @@
+<style>.down-bar{
+        width:100%;
+        background:rgba(0,0,0,.7);
+        position: fixed;
+        bottom:0;
+        left:0;
+        text-align:center;
+        padding:30px 0;
+        display: block;
+        z-index:999999;
+        backdrop-filter: blur(8px) saturate(100);
+        display: none;
+    }
+
+    .down-bar a{
+       background:#5796FC;
+        padding: 15px 30px;
+        font-weight: 700;
+        color:#FFFFFF;
+        margin: 5px;
+        border-radius: 6px;
+    }
+
+    .down-bar a.whatsapp{
+        background: #57BB62;
+    }
+
+    @media screen and (max-width: 720px){
+
+        .down-bar{
+            padding:15px 0;
+        }
+
+        .down-bar a{
+            display: block;
+            margin: 6px 10px;
+        }
+
+    }
+
+    .bt-whatsApp,#msg1{
+        display: none !important;
+    }
+
+    #alertWapp{
+        display: none !important;
+
+    }</style><div class="down-bar" id="dbar">
+
+        <a href="https://sun.eduzz.com/857122?utm_source=cod" class="google-border"><span style="font-size:16px;"> EXPERIMENTE POR 15 DIAS
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5527XXXXXXX" class="whatsapp">WHATSAPP</a>
+
+
+</div> <script>window.addEventListener("scroll", function(event) {
+
+    let dbar = document.getElementById("dbar");
+    let top = this.scrollY;
+
+
+        console.log(dbar);
+
+    if(top > 300){
+        dbar.style.display = "block";
+    }else{
+        dbar.style.display = "none";
+    }
+
+
+});</script>
